@@ -117,12 +117,24 @@ export default function Home() {
             title="My Work"
             img={cmd}
           />
+
+          {/* 
           <DesktopIcon
             appID={7}
             doubleClick={() => void 0}
             title="My Hobbies"
             img={solitare}
+          /> 
+          */}
+
+          {/* Replaced My Hobbies with LeetCode */}
+          <DesktopIcon
+            appID={7}
+            doubleClick={handleOpenLeetCode}
+            title="My LeetCode"
+            img={lc}
           />
+
           {/* Competitive programming icons */}
           <DesktopIcon
             appID={8}
@@ -135,12 +147,6 @@ export default function Home() {
             doubleClick={handleOpenCodeChef}
             title="My CodeChef"
             img={cc}
-          />
-          <DesktopIcon
-            appID={10}
-            doubleClick={handleOpenLeetCode}
-            title="My LeetCode"
-            img={lc}
           />
 
           {Tabs.map((tab, index) => {
